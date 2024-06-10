@@ -8,21 +8,19 @@
 </head>
 <body>
     <button id="addBook">Add new Book</button>
-    <form id="form" action="index.html" style="visibility: hidden;" method="get">
-        <input type="text" name="" id="" placeholder="Title"><br>
-        <input type="text" name="" id="" placeholder="Author"><br>
-        <input type="text" name="" id="" placeholder="Pages"><br>
-        <label>
-            <input type="radio" name="read" id="yes" value="true">
-            Yes
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="read" id="no" value="false">
-            No
-        </label><br>
-        <input id="submit" type="submit" value="add">
-    </form>
+    <dialog class="modal">
+        <form id="form" action="index.html" method="get">
+            <input type="text" name="" id="title" placeholder="Title"><br>
+            <input type="text" name="" id="author" placeholder="Author"><br>
+            <input type="number" name="" id="pages" placeholder="Pages"><br>
+            <label>
+                read
+                <input type="checkbox" name="read" id="read" value="true">
+            </label>
+            <br>
+            <input id="button" type="button" value="add">
+        </form>
+    </dialog>
     <script src="script.js"></script>
 </body>
 </html>
