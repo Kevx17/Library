@@ -24,4 +24,47 @@
   }
 
   /*styleing*/
+
+
+  html{
+    height: 100%;
+  }
+
+
+  body{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    height: 100%;
+  }
+
+  .library{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: auto;
+  }
   
+  .Book{
+    color:aliceblue;
+    background-image: url(istockphoto-506714069-612x612.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 25vw;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .close{
+    font-size: larger;
+    color: aliceblue;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+  }
+
+  .content{
+    display: table;
+    text-align: center;
+    margin-top: 40px;
+  }
